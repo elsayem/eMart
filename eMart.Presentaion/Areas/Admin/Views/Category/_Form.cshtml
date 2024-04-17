@@ -1,0 +1,184 @@
+﻿     <!--begin::Form-->
+<form class="form" action="#" id="kt_modal_new_address_form">
+    <!--begin::Modal header-->
+    <div class="modal-header" id="kt_modal_new_address_header">
+        <!--begin::Modal title-->
+
+        <h2>Add New Category</h2>
+        <!--end::Modal title-->
+        <!--begin::Close-->
+        <div class="btn btn-sm btn-icon btn-active-color-primary" data-bs-dismiss="modal">
+            <!--begin::Svg Icon | path: icons/duotune/arrows/arr061.svg-->
+            <span class="svg-icon svg-icon-1">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="100"
+                     viewBox="0 0 24 24" fill="none">
+                    <rect opacity="0.5" x="6" y="17.3137" width="16" height="2" rx="1"
+                          transform="rotate(-45 6 17.3137)" fill="black" />
+                    <rect x="7.41422" y="6" width="16" height="2" rx="1"
+                          transform="rotate(45 7.41422 6)" fill="black" />
+                </svg>
+            </span>
+            <!--end::Svg Icon-->
+        </div>
+        <!--end::Close-->
+    </div>
+    <!--end::Modal header-->
+    <!--begin::Modal body-->
+    <!-- <div class="modal-body py-10 px-lg-17"> -->
+
+    <div class="modal-body py-5 px-lg-10">
+        <!--begin::Scroll-->
+
+        <div class="scroll-y me-n7 pe-7" id="kt_modal_new_address_scroll"
+             data-kt-scroll="true" data-kt-scroll-activate="{default: false, lg: false}"
+             data-kt-scroll-max-height="auto"
+             data-kt-scroll-dependencies="#kt_modal_new_address_header"
+             data-kt-scroll-wrappers="#kt_modal_new_address_scroll"
+             data-kt-scroll-offset="200px">
+
+            <!--begin::Input group-->
+            <div class="d-flex flex-column mb-5 fv-row">
+
+                <div class="row mb-5">
+                    <!--begin::Col-->
+                    <!-- <div class="col-md-6 fv-row"> -->
+                    <div class="col-md-6 justify-content-md-center fv-row">
+                        <!-- tthumb -->
+                        <!--begin::Label-->
+                        <style>
+                            .image-input-placeholder {
+                                background-image: url('/assets/media/svg/files/blank-image.svg');
+                            }
+
+                            [data-bs-theme="dark"] .image-input-placeholder {
+                                background-image: url('/assets/media/svg/files/blank-image-dark.svg');
+                            }
+                        </style>
+                        <!--end::Image input placeholder-->
+                        <!--begin::Image input-->
+
+                        <label class="fs-6 fw-bold mb-5">Thumbnail</label>
+
+                        <div class="d-flex justify-content-md-center row">
+
+                            <div class="image-input image-input-empty image-input-outline image-input-placeholder mb-3 mt-3  px-5 col-12 col-md-8"
+                                 data-kt-image-input="true">
+                                <!--begin::Preview existing avatar-->
+                                <div class="image-input-wrapper w-150px h-150px">
+                                </div>
+                                <!--end::Preview existing avatar-->
+                                <!--begin::Label-->
+                                <label class="btn btn-icon btn-circle btn-active-color-primary w-25px h-25px bg-body shadow"
+                                       data-kt-image-input-action="change"
+                                       data-bs-toggle="tooltip" aria-label="Change avatar"
+                                       data-bs-original-title="Change avatar"
+                                       data-kt-initialized="1">
+                                    <!--begin::Icon-->
+                                    <i class="ki-duotone ki-pencil fs-7">
+                                        <span class="path1"></span><span class="path2"></span>
+                                    </i>
+                                    <!--end::Icon-->
+                                    <!--begin::Inputs-->
+                                    <input type="file" name="avatar"
+                                           accept=".png, .jpg, .jpeg">
+                                    <input type="hidden" name="avatar_remove">
+                                    <!--end::Inputs-->
+                                </label>
+
+                                <!--begin::Image input-->
+                                <!--end::Label-->
+                                <!--begin::Cancel-->
+                                <span class="btn btn-icon btn-circle btn-active-color-primary w-25px h-25px bg-body shadow"
+                                      data-kt-image-input-action="cancel"
+                                      data-bs-toggle="tooltip" aria-label="Cancel avatar"
+                                      data-bs-original-title="Cancel avatar"
+                                      data-kt-initialized="1">
+                                    <i class="ki-duotone ki-cross fs-2">
+                                        <span class="path1"></span><span class="path2"></span>
+                                    </i>
+                                </span>
+                                <!--end::Cancel-->
+                                <!--begin::Remove-->
+                                <span class="btn btn-icon btn-circle btn-active-color-primary w-25px h-25px bg-body shadow"
+                                      data-kt-image-input-action="remove"
+                                      data-bs-toggle="tooltip" aria-label="Remove avatar"
+                                      data-bs-original-title="Remove avatar"
+                                      data-kt-initialized="1">
+                                    <i class="ki-duotone ki-cross fs-2">
+                                        <span class="path1"></span><span class="path2"></span>
+                                    </i>
+                                </span>
+                                <!--end::Remove-->
+                            </div>
+                        </div>
+                        <!--end::Image input-->
+                        <!--begin::Description-->
+                        <div class="text-muted fs-7 col-12">
+                            Set
+                            the category
+                            thumbnail image. Only *.png, *.jpg and
+                            *.jpeg
+                            image files are accepted
+                        </div>
+                        <!--end::Description-->
+                    </div>
+                    <!--end::Card body-->
+                </div>
+                <!--end::Thumbnail settings-->
+                <!-- <div class="d-flex flex-column mb-8">
+                    <label class="fs-6 fw-bold mb-2">Target Details</label>
+                    <textarea class="form-control form-control-solid" rows="3" name="target_details" placeholder="Type Target Details"></textarea>
+                </div> -->
+                <!--end::Input group-->
+                <!--begin::Input group-->
+                <!-- <div class="form-floating mb-7">
+                    <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com"/>
+                    <label for="floatingInput">Email address</label>
+                </div> -->
+                <div class="form-floating mb-3">
+                    <!--begin::Input-->
+                    <input class="form-control form-control-solid" for="CategoryName"
+                           placeholder="" id="Category" />
+                    <!--end::Input-->
+                    <!--begin::Label-->
+                    <label class="floatingInput" id="CategoryName">
+                        Category
+                        Name
+                    </label>
+                    <!--end::Label-->
+
+                </div>
+                <div class="form-floating mb-3">
+                    <textarea class="form-control form-control-solid" rows="3"
+                              name="target_details" placeholder="" id="description"></textarea>
+                    <label for="description">Description</label>
+
+                </div>
+                <!--end::Input group-->
+
+            </div>
+            <!--end::Scroll-->
+        </div>
+        <!--end::Modal body-->
+        <!--begin::Modal footer-->
+        <div class="modal-footer flex-center">
+            <!--begin::Button-->
+            <button type="reset" id="kt_modal_new_address_cancel"
+                    class="btn btn-light me-3">
+                Discard
+            </button>
+            <!--end::Button-->
+            <!--begin::Button-->
+            <button type="submit" id="kt_modal_new_address_submit" class="btn btn-primary">
+                <span class="indicator-label">Submit</span>
+                <span class="indicator-progress">
+                    Please wait...
+                    <span class="spinner-border spinner-border-sm align-middle ms-2"></span>
+                </span>
+            </button>
+            <!--end::Button-->
+        </div>
+        <!--end::Modal footer-->
+    </div>
+</form>
+<!--end::Form-->
